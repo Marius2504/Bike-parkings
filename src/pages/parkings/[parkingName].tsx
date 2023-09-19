@@ -1,3 +1,4 @@
+import { NavBar } from '@/components/navBar';
 import { useRouter,useLocation } from 'next/router'
 
 
@@ -11,7 +12,7 @@ function ParkingId({listParkings})
     const parkingName = listParkings.find((p) => p.name === router.query.parkingName);;
     console.log(parkingName)
 
-    return <>{
+    return <><NavBar/>{
         <div>
           <h1>Parking detail</h1>
           <p>Name: {parkingName.name}</p>

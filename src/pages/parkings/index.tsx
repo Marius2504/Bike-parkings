@@ -1,3 +1,4 @@
+import { NavBar } from '@/components/navBar';
 import Link  from 'next/link'
 
 function Parkings({listParkings}) {
@@ -9,13 +10,13 @@ function Parkings({listParkings}) {
         return occupancyPercentage <= 50; 
       });
     return (
-        <>
+        <><NavBar/>
           <h1>List of parkings</h1>
           {listParkings.map((parking) => (
-            <Link href={{pathname:`/parkings/${parking.name}`}} key={parking.name}>
-              <div>
+            <Link href={{pathname:`/parkings/${parking.name}`}} key={parking.name} style={{ textDecoration: 'none', color : 'inherit' }}>
+              <h3>
                 {parking.name}
-              </div>
+              </h3>
             </Link>
           ))}
         </>
