@@ -5,7 +5,7 @@
   background-color: #0e387a
 }
 body{
-  background-color: #d2d9e6;
+  background-color: #ffffff;
   margin: 0px;
 }
 .title{
@@ -78,11 +78,21 @@ body{
   left: 10%;
 }
 .textBikeDetail{
-  border: 5px solid rgb(0, 0, 0);
   border-radius: 5%;
-  padding: 20px;
-  background-color: rgb(231, 227, 227);
+  color: var(--textColor);
+  padding: 40px;
+  background-color: #0e387a;
+  box-shadow: 0 0 400px #000000;
+  transition: 1s;
 }
+
+
+@keyframes animate{
+  100%{
+      filter: hue-rotate(360deg);
+  }
+}
+
 .copyButton{
   background-color: rgb(36, 134, 75);
 }
