@@ -19,4 +19,5 @@ NextJs:
 
 ## :exclamation: Deployment: vercel.com
 
-## :movie_camera: Link: https://itp-case-web-23-nine.vercel.app
+## :movie_camera: Link: https://itp-case-web-23-weld.vercel.app
+
