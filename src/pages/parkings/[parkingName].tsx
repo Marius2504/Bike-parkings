@@ -10,7 +10,7 @@ function ParkingId({listParkings}:any)
     const parkingName = listParkings.find((p:any) => p.name === router.query.parkingName);;
 
     return <><NavBar/>{
-        <div className='textBike text'>
+        <div className='text textBike textBikeDetail'>
           <h1>Parking details</h1>
           <p>Name: {parkingName.name}</p>
           <p>Description: {parkingName.description}</p>

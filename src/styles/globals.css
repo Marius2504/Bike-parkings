@@ -2,10 +2,10 @@
   --textColor: #fff;
 }
 .nav{
-  background-color: "#0F2C59"
+  background-color: #0e387a
 }
 body{
-  background-color: #fafafa;
+  background-color: #d2d9e6;
   margin: 0px;
 }
 .title{
@@ -29,6 +29,15 @@ body{
   display: flex;
   flex-direction: row;
   justify-content:center;
+}
+@media screen and (max-width: 600px) {
+  .bikesContainer{
+    flex-direction: column;
+  }
+  .imageContainer{
+    width: 100vw;
+  }
+  
 }
 .image{
   position: relative;
@@ -68,6 +77,12 @@ body{
   top: 30%;
   left: 10%;
 }
+.textBikeDetail{
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 5%;
+  padding: 20px;
+  background-color: rgb(231, 227, 227);
+}
 .copyButton{
   background-color: rgb(36, 134, 75);
 }
@@ -85,6 +100,7 @@ body{
   padding-left: 3%;
   padding-top: 2%;
   align-items: center;
+  
 }
 .parkingImage{
   position: relative;
