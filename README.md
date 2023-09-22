@@ -14,6 +14,7 @@
   <li>Jest: npm install --save-dev jest @testing-library/react @testing-library/jest-dom</li>
   <li>Jest-enviroment-jsdom: npm install -D jest-environment-jsdom</li>
 </ul>
+
 NextJs: 
 
 ## :exclamation: Deployment: vercel
