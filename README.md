@@ -9,7 +9,7 @@
 ## :memo: Instalation process 
 
 <ul>
-  <li>NextJs: </li>
+  <li>NextJs: node.js & Visual Studio Code</li>
   <li>MUI material: npm install @mui/material @emotion/react @emotion/styled</li>
   <li>Jest: npm install --save-dev jest @testing-library/react @testing-library/jest-dom</li>
   <li>Jest-enviroment-jsdom: npm install -D jest-environment-jsdom</li>
@@ -17,6 +17,6 @@
 
 NextJs: 
 
-## :exclamation: Deployment: vercel
+## :exclamation: Deployment: vercel.com
 
 ## :movie_camera: Link: https://itp-case-web-23-nine.vercel.app
