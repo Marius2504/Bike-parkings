@@ -2,10 +2,10 @@
   --textColor: #fff;
 }
 .nav{
-  background-color: "#0F2C59"
+  background-color: #0e387a
 }
 body{
-  background-color: #fafafa;
+  background-color: #ffffff;
   margin: 0px;
 }
 .title{
@@ -29,6 +29,15 @@ body{
   display: flex;
   flex-direction: row;
   justify-content:center;
+}
+@media screen and (max-width: 600px) {
+  .bikesContainer{
+    flex-direction: column;
+  }
+  .imageContainer{
+    width: 100vw;
+  }
+  
 }
 .image{
   position: relative;
@@ -68,6 +77,22 @@ body{
   top: 30%;
   left: 10%;
 }
+.textBikeDetail{
+  border-radius: 5%;
+  color: var(--textColor);
+  padding: 40px;
+  background-color: #0e387a;
+  box-shadow: 0 0 400px #000000;
+  transition: 1s;
+}
+
+
+@keyframes animate{
+  100%{
+      filter: hue-rotate(360deg);
+  }
+}
+
 .copyButton{
   background-color: rgb(36, 134, 75);
 }
@@ -85,6 +110,7 @@ body{
   padding-left: 3%;
   padding-top: 2%;
   align-items: center;
+  
 }
 .parkingImage{
   position: relative;

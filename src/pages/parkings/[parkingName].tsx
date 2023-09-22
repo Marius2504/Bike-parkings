@@ -1,7 +1,7 @@
 import { NavBar } from '@/components/navBar';
 import { useRouter } from 'next/router'
 import { Button } from '../../../node_modules/@mui/material/index';
-
+import PedalBikeIcon from '@mui/icons-material/PedalBike';
 
 function ParkingId({listParkings}:any)
 {
@@ -10,8 +10,8 @@ function ParkingId({listParkings}:any)
     const parkingName = listParkings.find((p:any) => p.name === router.query.parkingName);;
 
     return <><NavBar/>{
-        <div className='textBike text'>
-          <h1>Parking details</h1>
+        <div className='text textBike textBikeDetail'>
+          <h1>Parking details <PedalBikeIcon style={{fontSize:"48px",position:'relative',top:"10px"}} /> </h1>
           <p>Name: {parkingName.name}</p>
           <p>Description: {parkingName.description}</p>
           <p>Category: {parkingName.categorie}</p>
