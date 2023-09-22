@@ -3,22 +3,22 @@ import Link  from 'next/link'
 import Image from 'next/image'
 import LabelImportantIcon from '@mui/icons-material/LabelImportant';
 import NotListedLocationIcon from '@mui/icons-material/NotListedLocation';
-function Parkings({listParkings}) {
+function Parkings({listParkings}:any) {
     listParkings = listParkings.results
 
-    listParkings = listParkings.filter((parking) => {
+    listParkings = listParkings.filter((parking:any) => {
       
         const occupancyPercentage = (parking.occupation / parking.totalcapacity) * 100;
         return occupancyPercentage <= 50; 
       });
-    listParkings.sort((a, b) => b.totalcapacity - a.totalcapacity);
+    listParkings.sort((a:any, b:any) => b.totalcapacity - a.totalcapacity);
     return (
         <><NavBar/>
         
           <div className='listParkings'>
             <h1 className ='text' style={{fontSize:'30px'}}><NotListedLocationIcon style={{fontSize:"48px",position:'relative',top:"10px"}}/> List of parkings sorted from highest to lowest capacity</h1>
               
-              {listParkings.map((parking) => (
+              {listParkings.map((parking:any) => (
                 <Link href={{pathname:`/parkings/${parking.name}`}} key={parking.name} style={{ textDecoration: 'none', color : 'inherit'}}>
                   
                   <h3 className ='text' >

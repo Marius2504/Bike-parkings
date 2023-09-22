@@ -3,11 +3,11 @@ import { useRouter,useLocation } from 'next/router'
 import { Button } from '../../../node_modules/@mui/material/index';
 
 
-function ParkingId({listParkings})
+function ParkingId({listParkings}:any)
 {
     const router = useRouter();
     listParkings = listParkings.results
-    const parkingName = listParkings.find((p) => p.name === router.query.parkingName);;
+    const parkingName = listParkings.find((p:any) => p.name === router.query.parkingName);;
 
     return <><NavBar/>{
         <div className='textBike text'>
@@ -34,7 +34,7 @@ export async function getStaticPaths() {
   const jsonParkings = await response.json();
   const parkings = jsonParkings.results;
 
-  const paths = parkings.map((parking) => {
+  const paths = parkings.map((parking:any) => {
     return {
       params: { parkingName: parking.name }
     };

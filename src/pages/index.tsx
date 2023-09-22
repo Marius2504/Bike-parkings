@@ -6,7 +6,7 @@ import { Button } from '../../node_modules/@mui/material/index'
 
 const inter = Inter({ subsets: ['latin'] })
 
-export default function Home({Dampoort,Sint})
+export default function Home({Dampoort,Sint}:any)
 {
   Dampoort = Dampoort.results[0]
   Sint = Sint.results[0]
