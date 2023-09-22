@@ -1,5 +1,5 @@
 import { NavBar } from '@/components/navBar';
-import { useRouter,useLocation } from 'next/router'
+import { useRouter } from 'next/router'
 import { Button } from '../../../node_modules/@mui/material/index';
 
 
@@ -17,7 +17,7 @@ function ParkingId({listParkings}:any)
           <p>Category: {parkingName.categorie}</p>
           <p>Available amount of parking spots: {parkingName.availablecapacity}</p>
           <p>Taken spots: {Math.floor(100 - Number(parkingName.availablecapacity)/Number(parkingName.totalcapacity) * 100)} %</p>
-          <Button variant='containd' className='copyButton'>
+          <Button variant="contained" className='copyButton'>
             <a target="_blank" style={{textDecoration:'none',color:'white'}} href={`https://www.google.com/maps/search/?api=1&query=${parkingName.location.lat},${parkingName.location.lon}`} rel="noopener noreferrer">
                 Google map
             </a>

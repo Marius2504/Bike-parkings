@@ -17,7 +17,7 @@ export default function Home({Dampoort,Sint}:any)
         
         <div className='bikeInfo'>
           <div className='text textBike'>
-            <h1>Blue Bike deelfietsen Gent Dampoort <Button variant='containd' className='copyButton' onClick={() => {navigator.clipboard.writeText("Gent Dampoort")}}> Copy</Button></h1>
+            <h1>Blue Bike deelfietsen Gent Dampoort <Button variant="contained" className='copyButton' onClick={() => {navigator.clipboard.writeText("Gent Dampoort")}}> Copy</Button></h1>
             <p>Name: {Dampoort.name}</p>
             <p>Amount of available bikes: {Dampoort.bikes_available}</p>
             <p>Total amount of bikes: {Number(Dampoort.bikes_in_use) + Number(Dampoort.bikes_available)}</p>
@@ -30,7 +30,7 @@ export default function Home({Dampoort,Sint}:any)
       <div className = "imageContainer">
         <div className='bikeInfo'>
           <div className='text textBike'>
-            <h1>Blue Bike deelfietsen Ghent Sint Pieters <Button variant='containd' className='copyButton' onClick={() => {navigator.clipboard.writeText("Sint Pieters")}}> Copy</Button></h1>
+            <h1>Blue Bike deelfietsen Ghent Sint Pieters <Button variant="contained" className='copyButton' onClick={() => {navigator.clipboard.writeText("Sint Pieters")}}> Copy</Button></h1>
             <p>Name: {Sint.name}</p>
             <p>Amount of available bikes: {Sint.bikes_available}</p>
             <p>Total amount of bikes: {Number(Sint.bikes_in_use) + Number(Sint.bikes_available)}</p>
