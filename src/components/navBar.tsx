@@ -3,7 +3,7 @@ import PedalBikeIcon from '@mui/icons-material/PedalBike';
 import Link  from 'next/link'
 export const NavBar = () =>{
     return (
-        <AppBar position = 'static' style = {{backgroundColor: "#0F2C59"}}>
+        <AppBar position = 'static' className='nav'>
             <Toolbar>
                 <IconButton size = 'large' edge = 'start' color = 'inherit' aria-label='logo'>
                     <PedalBikeIcon></PedalBikeIcon>
