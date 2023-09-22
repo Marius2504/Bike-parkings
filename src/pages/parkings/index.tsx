@@ -9,7 +9,7 @@ function Parkings({listParkings}:any) {
     listParkings = listParkings.filter((parking:any) => {
       
         const occupancyPercentage = (parking.occupation / parking.totalcapacity) * 100;
-        return occupancyPercentage <= 50; 
+        return occupancyPercentage <= 50 && parking.isopennow == '1'; 
       });
     listParkings.sort((a:any, b:any) => b.totalcapacity - a.totalcapacity);
     return (
