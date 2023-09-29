@@ -28,7 +28,7 @@ function ParkingId({listParkings}:any)
       }</>
 }
 export default ParkingId;
-
+/*
 export async function getStaticPaths() {
   const response = await fetch('https://data.stad.gent/api/explore/v2.1/catalog/datasets/bezetting-parkeergarages-real-time/records?limit=20');
   const jsonParkings = await response.json();
@@ -45,9 +45,9 @@ export async function getStaticPaths() {
     fallback: false
   };
 }
+*/
 
-
-export async function getStaticProps(){
+export async function getServerSideProps(){
   const response =await fetch('https://data.stad.gent/api/explore/v2.1/catalog/datasets/bezetting-parkeergarages-real-time/records?limit=20')
 
     const jsonParkings = await response.json()
