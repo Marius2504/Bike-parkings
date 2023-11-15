@@ -36,7 +36,7 @@ function Parkings({listParkings}:any) {
 }
 export default Parkings;
 
-export async function getStaticProps(){
+export async function getServerSideProps(){
 
     const response =await fetch('https://data.stad.gent/api/explore/v2.1/catalog/datasets/bezetting-parkeergarages-real-time/records?limit=20')
 
