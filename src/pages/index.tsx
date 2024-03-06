@@ -43,7 +43,7 @@ export default function Home({Dampoort,Sint}:any)
   }</>
 }
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const responseDampoort = await fetch('https://data.stad.gent/api/explore/v2.1/catalog/datasets/blue-bike-deelfietsen-gent-dampoort/records?limit=20')
   const responseSint = await fetch('https://data.stad.gent/api/explore/v2.1/catalog/datasets/blue-bike-deelfietsen-gent-sint-pieters-m-hendrikaplein/records?limit=20')
 
