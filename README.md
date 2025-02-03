@@ -1,6 +1,5 @@
 ## :arrow_forward: Tools
-This is a website that presents free parking spots in real time for Gent Dampoort and Ghent Sint Pieters, Belgium.
-
+This web application helps users find 
 <ul>
   <li>Frameworks: NextJs</li>
   <li>UI design: MUI material@5.14.10</li>
