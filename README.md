@@ -1,5 +1,13 @@
 ## :arrow_forward: Tools
-This web application helps users find 
+This project helps users find available bike parking spots in Sint Pieters and Gent Dampoort, Belgium. It provides real-time information on:
+
+<ul>
+  <li>The number of available spots</li>
+  <li>The total capacity of each parking location</li>
+  <li>Detailed info for each bike parking facility</li>
+  <li>Direct links to Google Maps for easy navigation</li>
+</ul>
+
 <ul>
   <li>Frameworks: NextJs</li>
   <li>UI design: MUI material@5.14.10</li>
