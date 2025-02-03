@@ -8,6 +8,9 @@ This project helps users find available bike parking spots in Sint Pieters and G
   <li>Direct links to Google Maps for easy navigation</li>
 </ul>
 
+![Bike Parking Map](Screenshot 2025-02-03 103635.png)
+
+
 ## :arrow_forward: Tools
 <ul>
   <li>Frameworks: NextJs</li>
